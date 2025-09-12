@@ -1,0 +1,35 @@
+.image-profile {
+    height: 200px;
+    width: 250px;
+
+    border-radius: 20px;
+
+}
+
+.header-container {
+    padding: 20px;
+    background-color: #930a0a36;
+    /* Light gray */
+}
+
+.details-container {
+    z-index: 2;
+    /* overlay above */
+    padding: 20px;
+    background-color: #c3c589a6;
+}
+
+.main-content {
+    position: relative;
+    z-index: 1;
+    /* ensures content isn’t covered */
+}
+
+body {
+    background-image: url('../assets/images/bg_sky.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+}
