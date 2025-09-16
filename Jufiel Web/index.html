@@ -14,33 +14,316 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div
+      class="nav-bar-main d-flex justify-content-center justify-content-lg-between justify-content-md-between flex-lg-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm"
+    >
+      <!-- Contact Icons -->
+      <div class="d-flex justify-content-center">
+        <!-- Show as icons on md+ -->
+        <nav class="nav justify-content-center d-none d-md-flex">
+          <img
+            class="image-contact mx-2"
+            src="assets/svg/facebook.svg"
+            alt="Facebook"
+            width="24"
+            height="24"
+          />
+          <img
+            class="image-contact mx-2"
+            src="assets/svg/instagram.svg"
+            alt="Instagram"
+            width="24"
+            height="24"
+          />
+          <img
+            class="image-contact mx-2"
+            src="assets/svg/threads.svg"
+            alt="Threads"
+            width="24"
+            height="24"
+          />
+          <img
+            class="image-contact mx-2"
+            src="assets/svg/linkedin.svg"
+            alt="LinkedIn"
+            width="24"
+            height="24"
+          />
+        </nav>
+
+        <!-- Dropdown on small screens -->
+        <div class="dropdown d-md-none">
+          <img
+            class="btn btn-outline-secondary dropdown-toggle image-contact"
+            type="button"
+            id="dropdownContacts"
+            src="assets/svg/person-lines-fill.svg"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          />
+          <ul class="dropdown-menu" aria-labelledby="dropdownContacts">
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img src="assets/svg/facebook.svg" width="16" class="me-2" />
+                Facebook</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img src="assets/svg/instagram.svg" width="16" class="me-2" />
+                Instagram</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img src="assets/svg/threads.svg" width="16" class="me-2" />
+                Threads</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img src="assets/svg/linkedin.svg" width="16" class="me-2" />
+                LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Navigation Links -->
+      <div class="d-flex justify-content-center">
+        <!-- Show links on md+ -->
+        <nav class="nav justify-content-center d-none d-md-flex">
+          <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#"
+            >Features</a
+          >
+          <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#"
+            >Enterprise</a
+          >
+          <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#"
+            >Support</a
+          >
+          <a class="py-2 link-body-emphasis text-decoration-none" href="#"
+            >Pricing</a
+          >
+        </nav>
+
+        <!-- Dropdown on small screens -->
+        <div class="dropdown d-md-none">
+          <img
+            class="btn btn-outline-secondary dropdown-toggle image-contact"
+            type="button"
+            id="dropdownNav"
+            src="assets/svg/menu-up.svg"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          />
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownNav">
+            <li><a class="dropdown-item" href="#">Features</a></li>
+            <li><a class="dropdown-item" href="#">Enterprise</a></li>
+            <li><a class="dropdown-item" href="#">Support</a></li>
+            <li><a class="dropdown-item" href="#">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hire Me Button -->
+      <div class="d-flex justify-content-center">
+        <div class="d-none d-md-flex">
+          <button type="button" class="btn btn-dark">Hire me! Please!</button>
+        </div>
+        <div class="d-md-none">
+          <img
+            class="btn btn-outline-secondary dropdown-toggle image-contact"
+            type="button"
+            src="assets/svg/patch-question.svg"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            id="dropdownCall"
+          />
+
+          <ul class="dropdown-menu text-center" aria-labelledby="dropdownCall">
+            <li>
+              <button type="button" class="btn btn-dark">
+                Hire me! Please!
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
-      <div class="position-relative">
-        <div class="row align-items-md-stretch g-1">
-          <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
-            <div class="h-100 p-3 text-bg-dark rounded-3">
+      <div class="d-flex flex-column align-items-center text-center">
+        <img
+          aria-label="Placeholder"
+          class="bd-placeholder-img rounded-circle"
+          height="140"
+          width="140"
+          src="assets/images/ic_profile.jpg"
+        />
+
+        <p class="text-muted mt-3">👋 Hi, Jufiel Lariosa</p>
+
+        <h1 class="fw-bold">
+          Passionate
+          <span class="highlight text-bg-secondary">Full-Stack Developer</span
+          ><br />
+          <span class="highlight text-bg-secondary"
+            >Creating Innovative Web and Mobile Solutions</span
+          >
+        </h1>
+
+        <!-- Description -->
+        <p class="text-secondary">
+          8 years of practical experience in mobile app development <br />
+          and 1 year as a dedicated web app developer, I bring expertise and
+          creativity to every project.
+        </p>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row g-4">
+        <!-- Left column -->
+        <div class="col-lg-6 d-flex flex-column gap-4">
+          <!-- Top large card -->
+          <div class="card h-100 p-4 shadow-sm">
+            <!-- Content goes here -->
+            <img
+              class="image-contact mb-4"
+              src="assets/svg/laptop.svg"
+              alt="Facebook"
+              width="30"
+              height="30"
+            />
+            <p class="h3">Skills and Expertise</p>
+            <p class="text-secondary">
+              Proficient in various programming languages and tools related to
+              mobile and web development
+            </p>
+
+            <div>
               <img
-                class="img-fluid rounded-3"
-                alt="Responsive image"
-                src="assets/images/ic_profile.jpg"
-                alt=""
+                class="image-contact mb-4"
+                src="assets/svg/android.svg"
+                alt="Facebook"
+                width="30"
+                height="30"
+              />
+              <img
+                class="image-contact mb-4"
+                src="assets/svg/apple.svg"
+                alt="Facebook"
+                width="30"
+                height="30"
+              />
+              <img
+                class="image-contact mb-4"
+                src="assets/svg/bootstrap.svg"
+                alt="Facebook"
+                width="30"
+                height="30"
+              />
+              <img
+                class="image-contact mb-4"
+                src="assets/svg/github.svg"
+                alt="Facebook"
+                width="30"
+                height="30"
+              />
+              <img
+                class="image-contact mb-4"
+                src="assets/svg/gitlab.svg"
+                alt="Facebook"
+                width="30"
+                height="30"
+              />
+              <img
+                class="image-contact mb-4"
+                src="assets/svg/javascript.svg"
+                alt="Facebook"
+                width="30"
+                height="30"
               />
             </div>
           </div>
-          <div class="col-xl-9 col-lg-8 col-md-7 col-sm-6">
-            <div class="h-100 p-3 text-bg-dark rounded-3">
-              <h2>Jufiel Lariosa</h2>
-              <p>
-                I’m a Mobile Applications Developer passionate about crafting
-                seamless and impactful digital experiences. With a strong
-                foundation in Flutter and native Android development, I love
-                bringing ideas to life through clean, scalable, and
-                user-friendly applications.
+
+          <!-- Bottom row (two small cards) -->
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card h-100 p-4 shadow-sm">
+                <p class="h3">Responsive Web and Mobile Design</p>
+
+                <p class="text-secondary">Creating e</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 p-4 shadow-sm">
+                <p class="text-secondary">
+                  8 years of practical experience in mobile app development
+                  <br />
+                  and 1 year as a dedicated web app developer, I bring expertise
+                  and creativity to every project.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="col-lg-6 d-flex flex-column gap-4">
+          <div class="card h-100 p-4 shadow-sm">
+            <div class="d-flex flex-column">
+              <p class="h3">Responsive Web and Mobile Design</p>
+
+              <p class="text-secondary">
+                Creating engaging web and mobile friendly design.
               </p>
+
+              <div class="align-self-end">
+                <img
+                  class="image-contact mb-4"
+                  src="assets/images/web-design.png"
+                  alt="Facebook"
+                  width="150"
+                  height="150"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card h-100 p-4 shadow-sm">
+            <div class="d-flex align-items-start flex-column">
+              <div>
+                <p class="h3">High-Quality Web and Mobile Development</p>
+              </div>
+
+              <div>
+                <p class="text-secondary">
+                  Delivering customized Web and Mobile Solutions to meet your
+                  needs.
+                </p>
+              </div>
+
+              <div class="mt-auto align-self-center">
+                <img
+                  class="image-contact mb-4"
+                  src="assets/images/coding.png"
+                  alt="Facebook"
+                  width="150"
+                  height="150"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
