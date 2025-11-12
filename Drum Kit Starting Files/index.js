@@ -6,6 +6,7 @@ for (var index = 0; index < buttons.length; index++) {
     var buttonInnerHTML = this.innerHTML;
 
     handleKeypress(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML);
   });
 
 
@@ -13,6 +14,7 @@ for (var index = 0; index < buttons.length; index++) {
 
 document.addEventListener("keypress", function (event) {
   handleKeypress(event.key);
+  buttonAnimation(event.key);
 });
 
 function handleKeypress(key) {
@@ -55,5 +57,15 @@ function handleKeypress(key) {
     default:
       console.log(key);
   }
+}
+
+function buttonAnimation(currentKey) {
+  var activeButton = document.querySelector("." + currentKey);
+
+  activeButton.classList.add("pressed");
+
+  setTimeout(function () {
+    activeButton.classList.remove("pressed");
+  }, 100);
 }
 
